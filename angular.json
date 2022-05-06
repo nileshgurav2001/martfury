@@ -27,9 +27,38 @@
               "src/assets"
             ],
             "styles": [
+  
+              "src/assets/themes/martfury/fonts/Linearicons/Linearicons/Font/demo-files/demo.css",
+              "src/assets/themes/martfury/plugins/bootstrap/css/bootstrap.min.css",
+              "src/assets/themes/martfury/plugins/owl-carousel/assets/owl.carousel.min.css",
+              "src/assets/themes/martfury/plugins/owl-carousel/assets/owl.theme.default.min.css",
+              "src/assets/themes/martfury/plugins/slick/slick.css",
+              "src/assets/themes/martfury/plugins/nouislider/nouislider.min.css",
+              "src/assets/themes/martfury/plugins/lightGallery/css/lightgallery.min.css",
+              "src/assets/themes/martfury/plugins/jquery-bar-rating/themes/fontawesome-stars.css",
+              "src/assets/themes/martfury/plugins/select2/css/select2.min.css",
+              "src/assets/themes/martfury/plugins/font-awesome/css/font-awesome.min.css",
+              "src/assets/themes/martfury/css/style.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/themes/martfury/plugins/jquery-3.5.1.min.js",
+              "src/assets/themes/martfury/plugins/nouislider/nouislider.min.js",
+              "src/assets/themes/martfury/plugins/popper.min.js",
+              "src/assets/themes/martfury/plugins/owl-carousel/owl.carousel.min.js",
+              "src/assets/themes/martfury/plugins/bootstrap/js/bootstrap.min.js",
+              "src/assets/themes/martfury/plugins/jquery.matchHeight-min.js",
+              "src/assets/themes/martfury/plugins/slick/slick.min.js",
+              "src/assets/themes/martfury/plugins/jquery-bar-rating/jquery.barrating.min.js",
+              "src/assets/themes/martfury/plugins/slick-animation.min.js",
+              "src/assets/themes/martfury/plugins/lightGallery/js/lightgallery.min.js",
+              "src/assets/themes/martfury/plugins/sticky-sidebar/sticky-sidebar.min.js",
+              "src/assets/themes/martfury/plugins/select2/js/select2.min.js",
+              "src/assets/themes/martfury/js/main.js",
+              "src/assets/themes/martfury/js/backend.js",              
+              "src/assets/themes/martfury/js/app.js"             
+
+            ]
           },
           "configurations": {
             "production": {

@@ -1,0 +1,1198 @@
+<section>
+
+  <div id="alert-container"></div>
+
+  <header class="header header--mobile" data-sticky="true">
+    <div class="header__top">
+      <div class="header__left">
+        <p>Welcome to Martfury Online Shopping Store!</p>
+      </div>
+      <div class="header__right">
+        <ul class="navigation__extra">
+          <li><a href="orders/tracking.html">Track your order</a></li>
+          <li>
+            <div class="ps-dropdown"><a href="#"><span>USD</span></a>
+              <ul class="ps-dropdown-menu">
+                <li><a href="orders/tracking.html"><span>USD</span></a></li>
+                <li><a href="orders/tracking.html"><span>EUR</span></a></li>
+                <li><a href="orders/tracking.html"><span>VND</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="ps-dropdown language">
+              <span>
+                <img src="vendor/core/core/base/images/flags/us.svg" title="English" width="16" alt="English">
+                English
+              </span>
+              <ul class="ps-dropdown-menu ">
+                <li>
+                  <a href="vi.html">
+                    <img src="../assets/vendor/core/core/base/images/flags/vn.svg" title="Tiếng Việt" width="16"
+                      alt="Tiếng Việt">
+                    <span>Tiếng Việt</span> </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="navigation--mobile">
+      <div class="navigation__left"><a class="ps-logo" href="index.htm"><img src="../assets/storage/general/logo.png"
+            alt="Martfury - Laravel Ecommerce system"></a></div>
+      <div class="navigation__right">
+        <div class="header__actions">
+          <div class="ps-cart--mini">
+            <a class="header__extra btn-shopping-cart" href="javascript:void(0)">
+              <i class="icon-bag2"></i><span><i>0</i></span>
+            </a>
+            <div class="ps-cart--mobile">
+              <div class="ps-cart__content">
+                <div class="ps-cart__items ps-cart_no_items">
+                  <span class="cart-empty-message">No products in the cart.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ps-block--user-header">
+            <div class="ps-block__left"><a href="login.html"><i class="icon-user"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ps-search--mobile">
+      <form class="ps-form--search-mobile" action="https://martfury.botble.com/products"
+        data-ajax-url="https://martfury.botble.com/ajax/search-products" method="get">
+        <div class="form-group--nest position-relative">
+          <input class="form-control input-search-product" name="q" value="" type="text" autocomplete="off"
+            placeholder="Search something...">
+          <div class="spinner-icon">
+            <i class="fa fa-spin fa-spinner"></i>
+          </div>
+          <button type="submit"><i class="icon-magnifier"></i></button>
+          <div class="ps-panel--search-result"></div>
+        </div>
+      </form>
+    </div>
+  </header>
+  <div class="ps-panel--sidebar" id="cart-mobile" style="display: none">
+    <div class="ps-panel__header">
+      <h3>Shopping Cart</h3>
+    </div>
+    <div class="navigation__content">
+      <div class="ps-cart--mobile">
+        <div class="ps-cart__content">
+          <div class="ps-cart__items ps-cart_no_items">
+            <span class="cart-empty-message">No products in the cart.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ps-panel--sidebar" id="navigation-mobile" style="display: none">
+    <div class="ps-panel__header">
+      <h3>Categories</h3>
+    </div>
+    <div class="ps-panel__content">
+      <ul class="menu--mobile">
+        <li>
+          <a href="product-categories/hot-promotions.html">
+            <i class="icon-star"></i>
+            Hot Promotions
+          </a>
+        </li>
+        <li class="menu-item-has-children has-mega-menu">
+          <a href="product-categories/electronics.html">
+            <i class="icon-laundry"></i>
+            Electronics
+          </a>
+          <span class="sub-toggle"></span>
+          <div class="mega-menu">
+            <div class="mega-menu__column">
+              <a href="product-categories/consumer-electronic.html">
+                <h4>Consumer Electronic<span class="sub-toggle"></span></h4>
+              </a>
+              <ul class="mega-menu__list">
+                <li><a href="product-categories/home-audio-theaters.html">Home Audio &amp; Theaters</a></li>
+                <li><a href="product-categories/tv-videos.html">TV &amp; Videos</a></li>
+                <li><a href="product-categories/camera-photos-videos.html">Camera, Photos &amp; Videos</a></li>
+                <li><a href="product-categories/cellphones-accessories.html">Cellphones &amp; Accessories</a></li>
+                <li><a href="product-categories/headphones.html">Headphones</a></li>
+                <li><a href="product-categories/videos-games.html">Videos games</a></li>
+                <li><a href="product-categories/wireless-speakers.html">Wireless Speakers</a></li>
+                <li><a href="product-categories/office-electronic.html">Office Electronic</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu__column">
+              <a href="product-categories/accessories-parts.html">
+                <h4>Accessories &amp; Parts<span class="sub-toggle"></span></h4>
+              </a>
+              <ul class="mega-menu__list">
+                <li><a href="product-categories/digital-cables.html">Digital Cables</a></li>
+                <li><a href="product-categories/audio-video-cables.html">Audio &amp; Video Cables</a></li>
+                <li><a href="product-categories/batteries.html">Batteries</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="product-categories/clothing.html">
+            <i class="icon-shirt"></i>
+            Clothing
+          </a>
+        </li>
+        <li class="menu-item-has-children has-mega-menu">
+          <a href="product-categories/computers.html">
+            <i class="icon-desktop"></i>
+            Computers
+          </a>
+          <span class="sub-toggle"></span>
+          <div class="mega-menu">
+            <div class="mega-menu__column">
+              <a href="product-categories/computer-technologies.html">
+                <h4>Computer &amp; Technologies<span class="sub-toggle"></span></h4>
+              </a>
+              <ul class="mega-menu__list">
+                <li><a href="product-categories/computer-tablets.html">Computer &amp; Tablets</a></li>
+                <li><a href="product-categories/laptop.html">Laptop</a></li>
+                <li><a href="product-categories/monitors.html">Monitors</a></li>
+                <li><a href="product-categories/computer-components.html">Computer Components</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu__column">
+              <a href="product-categories/networking.html">
+                <h4>Networking<span class="sub-toggle"></span></h4>
+              </a>
+              <ul class="mega-menu__list">
+                <li><a href="product-categories/drive-storages.html">Drive &amp; Storages</a></li>
+                <li><a href="product-categories/gaming-laptop.html">Gaming Laptop</a></li>
+                <li><a href="product-categories/security-protection.html">Security &amp; Protection</a></li>
+                <li><a href="product-categories/accessories.html">Accessories</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="product-categories/home-kitchen.html">
+            <i class="icon-lampshade"></i>
+            Home &amp; Kitchen
+          </a>
+        </li>
+        <li>
+          <a href="product-categories/health-beauty.html">
+            <i class="icon-heart-pulse"></i>
+            Health &amp; Beauty
+          </a>
+        </li>
+        <li>
+          <a href="product-categories/jewelry-watch.html">
+            <i class="icon-diamond2"></i>
+            Jewelry &amp; Watch
+          </a>
+        </li>
+        <li>
+          <a href="product-categories/technology-toys.html">
+            <i class="icon-desktop"></i>
+            Technology Toys
+          </a>
+        </li>
+        <li>
+          <a href="product-categories/phones.html">
+            <i class="icon-smartphone"></i>
+            Phones
+          </a>
+        </li>
+        <li>
+          <a href="product-categories/babies-moms.html">
+            <i class="icon-baby-bottle"></i>
+            Babies &amp; Moms
+          </a>
+        </li>
+        <li>
+          <a href="product-categories/sport-outdoor.html">
+            <i class="icon-baseball"></i>
+            Sport &amp; Outdoor
+          </a>
+        </li>
+        <li>
+          <a href="product-categories/books-office.html">
+            <i class="icon-book2"></i>
+            Books &amp; Office
+          </a>
+        </li>
+        <li>
+          <a href="product-categories/cars-motorcycles.html">
+            <i class="icon-car-siren"></i>
+            Cars &amp; Motorcycles
+          </a>
+        </li>
+        <li>
+          <a href="product-categories/home-improvements.html">
+            <i class="icon-wrench"></i>
+            Home Improvements
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="navigation--list">
+    <div class="navigation__content">
+      <a class="navigation__item ps-toggle--sidebar" href="#menu-mobile"><i class="icon-menu"></i><span> Menu</span></a>
+      <a class="navigation__item ps-toggle--sidebar" href="#navigation-mobile"><i class="icon-list4"></i><span>
+          Categories</span></a>
+      <a class="navigation__item ps-toggle--sidebar" href="#search-sidebar"><i class="icon-magnifier"></i><span>
+          Search</span></a>
+      <a class="navigation__item ps-toggle--sidebar" href="#cart-mobile"><i class="icon-bag2"></i><span> Cart</span></a>
+    </div>
+  </div>
+  <div class="ps-panel--sidebar" id="search-sidebar" style="display: none">
+    <div class="ps-panel__header">
+      <form class="ps-form--search-mobile" action="https://martfury.botble.com/products"
+        data-ajax-url="https://martfury.botble.com/ajax/search-products" method="get">
+        <div class="form-group--nest position-relative">
+          <input class="form-control input-search-product" name="q" value="" type="text" autocomplete="off"
+            placeholder="Search something...">
+          <div class="spinner-icon">
+            <i class="fa fa-spin fa-spinner"></i>
+          </div>
+          <button type="submit"><i class="icon-magnifier"></i></button>
+          <div class="ps-panel--search-result"></div>
+        </div>
+      </form>
+    </div>
+    <div class="navigation__content"></div>
+  </div>
+  <div class="ps-panel--sidebar" id="menu-mobile" style="display: none">
+    <div class="ps-panel__header">
+      <h3>Menu</h3>
+    </div>
+    <div class="ps-panel__content">
+      <ul class="menu--mobile">
+        <li class="   current-menu-item ">
+          <a href="index.htm">
+            Home
+          </a>
+        </li>
+        <li class=" menu-item-has-children   ">
+          <a href="#">
+            Pages
+          </a>
+          <span class="sub-toggle"></span>
+          <ul class="sub-menu">
+            <li>
+              <a href="about-us.html">
+                About us
+              </a>
+            </li>
+            <li>
+              <a href="terms-of-use.html">
+                Terms Of Use
+              </a>
+            </li>
+            <li>
+              <a href="terms-conditions.html">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li>
+              <a href="refund-policy.html">
+                Refund Policy
+              </a>
+            </li>
+            <li>
+              <a href="coming-soon.html">
+                Coming soon
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class=" menu-item-has-children   ">
+          <a href="products.html">
+            Shop
+          </a>
+          <span class="sub-toggle"></span>
+          <ul class="sub-menu">
+            <li>
+              <a href="products.html">
+                All products
+              </a>
+            </li>
+            <li>
+              <a href="product-categories/batteries.html">
+                Products Of Category
+              </a>
+            </li>
+            <li>
+              <a href="products/beat-headphone.html">
+                Product Single
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="stores.html">
+            Stores
+          </a>
+        </li>
+        <li>
+          <a href="blog.html">
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="faqs.html">
+            FAQs
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            Contact
+          </a>
+        </li>
+      </ul>
+      <ul class="menu--mobile menu--mobile-extra">
+        <li><a href="orders/tracking.html"><i class="icon-check-square"></i> Track your order</a></li>
+        <li><a href="compare.html"><i class="icon-chart-bars"></i> <span>Compare</span></a></li>
+        <li><a href="wishlist.html"><i class="icon-heart"></i> <span>Wishlist</span></a></li>
+        <li class="menu-item-has-children">
+          <a href="#"><span>USD</span></a>
+          <span class="sub-toggle"></span>
+          <ul class="sub-menu">
+            <li><a href="orders/tracking.html"><span>EUR</span></a></li>
+            <li><a href="orders/tracking.html"><span>VND</span></a></li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+          <a href="#">
+            <img src="vendor/core/core/base/images/flags/us.svg" title="English" width="16" alt="English">
+            English
+          </a>
+          <span class="sub-toggle"></span>
+          <ul class="sub-menu">
+            <li>
+              <a href="vi.html">
+                <img src="../assets/vendor/core/core/base/images/flags/vn.svg" title="Tiếng Việt" width="16"
+                  alt="Tiếng Việt">
+                <span>Tiếng Việt</span> </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="homepage-1">
+    <div id="app">
+      <div>
+        <div class="ps-home-banner ps-home-banner--1">
+          <div class="ps-container">
+            <div class="ps-section__left">
+              <div class="ps-carousel--nav-inside owl-slider" data-owl-auto="true" data-owl-loop="true"
+                data-owl-speed="5000" data-owl-gap="0" data-owl-nav="true" data-owl-dots="true" data-owl-item="1"
+                data-owl-item-xs="1" data-owl-item-sm="1" data-owl-item-md="1" data-owl-item-lg="1"
+                data-owl-duration="1000" data-owl-mousedrag="on" data-owl-animate-in="fadeIn"
+                data-owl-animate-out="fadeOut">
+                <div class="ps-banner bg--cover">
+                  <picture>
+                    <source srcset="../assets/storage/sliders/1-lg.jpg" media="(min-width: 1200px)">
+                    <source srcset="../assets/storage/sliders/1-md.jpg" media="(min-width: 768px)">
+                    <source srcset="../assets/storage/sliders/1-sm.jpg" media="(max-width: 767px)">
+                    <img src="../assets/storage/sliders/1-lg.jpg" alt="slider">
+                  </picture>
+                  <a class="ps-banner__overlay" href="products.html"></a>
+                </div>
+                <div class="ps-banner bg--cover">
+                  <picture>
+                    <source srcset="../assets/storage/sliders/2-lg.jpg" media="(min-width: 1200px)">
+                    <source srcset="../assets/storage/sliders/2-md.jpg" media="(min-width: 768px)">
+                    <source srcset="../assets/storage/sliders/2-sm.jpg" media="(max-width: 767px)">
+                    <img src="../assets/storage/sliders/2-lg.jpg" alt="slider">
+                  </picture>
+                  <a class="ps-banner__overlay" href="products.html"></a>
+                </div>
+                <div class="ps-banner bg--cover">
+                  <picture>
+                    <source srcset="../assets/storage/sliders/3-lg.jpg" media="(min-width: 1200px)">
+                    <source srcset="../assets/storage/sliders/3-md.jpg" media="(min-width: 768px)">
+                    <source srcset="../assets/storage/sliders/3-sm.jpg" media="(max-width: 767px)">
+                    <img src="../assets/storage/sliders/3-lg.jpg" alt="slider">
+                  </picture>
+                  <a class="ps-banner__overlay" href="products.html"></a>
+                </div>
+              </div>
+            </div>
+            <div class="ps-section__right">
+              <div class="ps-collection">
+                <div><a href="products.html" target="_blank"><img src="../assets/storage/promotion/1.jpg"
+                      style="max-width: 100%" alt="Top Slider Image 1"></a></div>
+              </div>
+              <div class="ps-collection">
+                <div><a href="products.html" target="_blank"><img src="../assets/storage/promotion/2.jpg"
+                      style="max-width: 100%" alt="Top Slider Image 2"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="ps-site-features">
+          <div class="ps-container">
+            <div class="ps-block--site-features">
+              <div class="ps-block__item">
+                <div class="ps-block__left"><i class="icon-rocket"></i></div>
+                <div class="ps-block__right">
+                  <h4>Free Delivery</h4>
+                  <p>For all orders over $99</p>
+                </div>
+              </div>
+              <div class="ps-block__item">
+                <div class="ps-block__left"><i class="icon-sync"></i></div>
+                <div class="ps-block__right">
+                  <h4>90 Days Return</h4>
+                  <p>If goods have problems</p>
+                </div>
+              </div>
+              <div class="ps-block__item">
+                <div class="ps-block__left"><i class="icon-credit-card"></i></div>
+                <div class="ps-block__right">
+                  <h4>Secure Payment</h4>
+                  <p>100% secure payment</p>
+                </div>
+              </div>
+              <div class="ps-block__item">
+                <div class="ps-block__left"><i class="icon-bubbles"></i></div>
+                <div class="ps-block__right">
+                  <h4>24/7 Support</h4>
+                  <p>Dedicated support</p>
+                </div>
+              </div>
+              <div class="ps-block__item">
+                <div class="ps-block__left"><i class="icon-gift"></i></div>
+                <div class="ps-block__right">
+                  <h4>Gift Service</h4>
+                  <p>Support gift service</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div>
+            <div class="ps-deal-of-day">
+              <div class="ps-container">
+                <div class="ps-section__header">
+                  <div class="ps-block--countdown-deal">
+                    <div class="ps-block__left">
+                      <h3>Deal of the day</h3>
+                    </div>
+                    <div class="ps-block__right">
+                      <figure>
+                        <figcaption>End in:</figcaption>
+                        <ul class="ps-countdown" data-time="2022/06/03">
+                          <li><span class="days"></span></li>
+                          <li><span class="hours"></span></li>
+                          <li><span class="minutes"></span></li>
+                          <li><span class="seconds"></span></li>
+                        </ul>
+                      </figure>
+                    </div>
+                  </div>
+    
+                </div>
+                
+              </div>
+            </div>
+          </div> -->
+
+      <!-- Deals of the day -->
+      <div class="vc_row wpb_row vc_row-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="wpb_column vc_column_container vc_col-sm-12">
+              <div class="vc_column-inner">
+                <div class="wpb_wrapper">
+                  <div class="martfury-empty-space ">
+                    <div class="col-lg-2" style="height: 85px"></div>
+                    <div class="mf_empty_space_md" style="height: 85px"></div>
+                    <div class="mf_empty_space_xs" style="height: 85px"></div>
+                  </div>
+                  <div
+                    class="mf-product-deals-day woocommerce  type-carousel style-1 product-type-day mf-products-carousel"
+                    id="deals-of-day62749231a7a89">
+                    <div class="cat-header">
+                      <div class="header-content">
+                        <h2 class="cat-title">Deals of the day</h2>
+                        <div class="header-countdown"><span class="ends-text">Ends in:</span>
+                          <div class="martfury-countdown" data-expire="74831"><span class="days timer"><span
+                                class="digits">00</span><span class="text">days</span></span><span
+                              class="divider">:</span><span class="hours timer"><span class="digits">20</span><span
+                                class="text">hours</span></span><span class="divider">:</span><span
+                              class="minutes timer"><span class="digits">34</span><span
+                                class="text">minutes</span></span><span class="divider">:</span><span
+                              class="seconds timer"><span class="digits">06</span><span
+                                class="text">seconds</span></span></div>
+                        </div>
+                      </div>
+                      <div class="header-link"><a class=""
+                          href="https://demo2.drfuri.com/martfury3/deals-of-the-day/">View All</a></div>
+                    </div>
+                    <div class="products-content" role="toolbar">
+                      <ul class="products columns-6 slick-initialized slick-slider slick-dotted"><span
+                          class="icon-chevron-left slick-prev-arrow slick-arrow slick-disabled" aria-disabled="true"
+                          style=""></span>
+
+
+
+
+
+
+                        <div aria-live="polite" class="slick-list draggable">
+                          <div class="slick-track" role="listbox"
+                            style="opacity: 1; width: 1452px; transform: translate3d(0px, 0px, 0px);">
+                            <li
+                              class="col-xs-6 col-sm-4 col-md-3 col-lg-2 un-6-cols product type-product post-22 status-publish first instock product_cat-air-conditioners product_cat-consumer-electrics product_cat-type-hanging-cell product_cat-type-hanging-wall product_tag-printer product_tag-sneaker has-post-thumbnail sale shipping-taxable purchasable product-type-simple slick-slide slick-current slick-active"
+                              style="width: 242px;" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option"
+                              aria-describedby="slick-slide00">
+                              <div class="product-inner  clearfix">
+                                <div class="mf-product-thumbnail"><a
+                                    href="https://demo2.drfuri.com/martfury3/shop/dji-phantom-4-quadcopter-camera-white/"
+                                    tabindex="0"><img width="300" height="300"
+                                      src="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/24a-300x300.jpg"
+                                      class="lazyloaded" alt="" sizes="(max-width: 300px) 100vw, 300px"
+                                      srcset="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/24a-300x300.jpg 300w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/24a-70x70.jpg 70w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/24a-150x150.jpg 150w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/24a-768x768.jpg 768w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/24a-600x600.jpg 600w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/24a.jpg 1000w"
+                                      data-ll-status="loaded"><noscript><img width="300" height="300"
+                                        src="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/24a-300x300.jpg"
+                                        class="" alt=""
+                                        srcset="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/24a-300x300.jpg 300w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/24a-70x70.jpg 70w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/24a-150x150.jpg 150w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/24a-768x768.jpg 768w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/24a-600x600.jpg 600w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/24a.jpg 1000w"
+                                        sizes="(max-width: 300px) 100vw, 300px" /></noscript><span class="ribbons"><span
+                                        class="onsale ribbon"><span class="onsep">-</span>22<span
+                                          class="per">%</span></span></span></a>
+                                  <div class="footer-button"><a href="?add-to-cart=22" data-quantity="1"
+                                      data-title="DJI Phantom 4 Quadcopter Camera"
+                                      class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                      data-product_id="22" data-product_sku="MF990081234"
+                                      aria-label="Add “DJI Phantom 4 Quadcopter Camera” to your cart" rel="nofollow"
+                                      tabindex="0"><i class="p-icon icon-bag2" data-rel="tooltip"
+                                        title="Add to cart"></i><span class="add-to-cart-text">Add to cart</span></a><a
+                                      href="https://demo2.drfuri.com/martfury3/shop/dji-phantom-4-quadcopter-camera-white/"
+                                      data-id="22" class="mf-product-quick-view" tabindex="0"><i class="p-icon icon-eye"
+                                        title="Quick View" data-rel="tooltip"></i></a>
+                                    <div
+                                      class="yith-wcwl-add-to-wishlist add-to-wishlist-22  wishlist-fragment on-first-load"
+                                      data-fragment-ref="22"
+                                      data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:22,&quot;parent_product_id&quot;:22,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:false,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+
+                                      <div class="yith-wcwl-add-button">
+                                        <a href="?add_to_wishlist=22" data-rel="tooltip" data-product-id="22"
+                                          data-product-type="simple" data-original-product-id="22"
+                                          class="add_to_wishlist single_add_to_wishlist"
+                                          data-product-title="DJI Phantom 4 Quadcopter Camera" title="Add to Wishlist"
+                                          tabindex="0">
+                                          <i class="yith-wcwl-icon fa fa-heart-o"></i> <span>Add to Wishlist</span>
+                                        </a>
+                                      </div>
+
+                                    </div>
+                                    <div class="compare-button mf-compare-button"><a
+                                        href="https://demo2.drfuri.com/martfury3?action=yith-woocompare-add-product&amp;id=22"
+                                        class="compare" title="Compare" data-product_id="22" tabindex="0">Compare</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <span class="price"><ins><span class="woocommerce-Price-amount amount"><bdi><span
+                                          class="woocommerce-Price-currencySymbol">$</span>945.99</bdi></span></ins><del><span
+                                      class="woocommerce-Price-amount amount"><bdi><span
+                                          class="woocommerce-Price-currencySymbol">$</span>1,207.15</bdi></span></del>
+                                  <span class="sale">22% off</span></span>
+                                <h2 class="woo-loop-product__title"><a
+                                    href="https://demo2.drfuri.com/martfury3/shop/dji-phantom-4-quadcopter-camera-white/"
+                                    tabindex="0">DJI Phantom 4 Quadcopter Camera</a></h2>
+                                <div class="sold-by-meta"><span class="sold-by-label">Sold By: </span><a
+                                    href="https://demo2.drfuri.com/martfury3/vendor/gopro/" tabindex="0">gopro</a></div>
+                                <div class="mf-rating">
+                                  <div class="star-rating" role="img" aria-label="Rated 4.33 out of 5"><span
+                                      style="width:86.6%">Rated <strong class="rating">4.33</strong> out of 5</span>
+                                  </div><span class="count">03</span>
+                                </div>
+                                <div class="deal-progress">
+                                  <div class="progress-bar">
+                                    <div class="progress-value" style="width: 33.707865168539%"></div>
+                                  </div>
+                                  <p class="progress-text">Sold: 30</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li
+                              class="col-xs-6 col-sm-4 col-md-3 col-lg-2 un-6-cols product type-product post-19 status-publish instock product_cat-decoration product_cat-furniture product_cat-garden-kitchen product_tag-sneaker product_tag-virtual has-post-thumbnail sale shipping-taxable purchasable product-type-simple slick-slide slick-active"
+                              style="width: 242px;" data-slick-index="1" aria-hidden="false" tabindex="-1" role="option"
+                              aria-describedby="slick-slide01">
+                              <div class="product-inner  clearfix">
+                                <div class="mf-product-thumbnail"><a
+                                    href="https://demo2.drfuri.com/martfury3/shop/simple-plastice-chair-in-white-color/"
+                                    tabindex="0"><img width="300" height="300"
+                                      src="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/26a-300x300.jpg"
+                                      class="lazyloaded" alt="" sizes="(max-width: 300px) 100vw, 300px"
+                                      srcset="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/26a-300x300.jpg 300w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/26a-70x70.jpg 70w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/26a-150x150.jpg 150w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/26a-768x768.jpg 768w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/26a-600x600.jpg 600w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/26a.jpg 1000w"
+                                      data-ll-status="loaded"><noscript><img width="300" height="300"
+                                        src="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/26a-300x300.jpg"
+                                        class="" alt=""
+                                        srcset="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/26a-300x300.jpg 300w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/26a-70x70.jpg 70w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/26a-150x150.jpg 150w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/26a-768x768.jpg 768w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/26a-600x600.jpg 600w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/26a.jpg 1000w"
+                                        sizes="(max-width: 300px) 100vw, 300px" /></noscript><span class="ribbons"><span
+                                        class="onsale ribbon"><span class="onsep">-</span>25<span
+                                          class="per">%</span></span></span></a>
+                                  <div class="footer-button"><a href="?add-to-cart=19" data-quantity="1"
+                                      data-title="Simple Plastice Chair In White Color"
+                                      class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                      data-product_id="19" data-product_sku="WP9017332225"
+                                      aria-label="Add “Simple Plastice Chair In White Color” to your cart"
+                                      rel="nofollow" tabindex="0"><i class="p-icon icon-bag2" data-rel="tooltip"
+                                        title="Add to cart"></i><span class="add-to-cart-text">Add to cart</span></a><a
+                                      href="https://demo2.drfuri.com/martfury3/shop/simple-plastice-chair-in-white-color/"
+                                      data-id="19" class="mf-product-quick-view" tabindex="0"><i class="p-icon icon-eye"
+                                        title="Quick View" data-rel="tooltip"></i></a>
+                                    <div
+                                      class="yith-wcwl-add-to-wishlist add-to-wishlist-19  wishlist-fragment on-first-load"
+                                      data-fragment-ref="19"
+                                      data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:19,&quot;parent_product_id&quot;:19,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:false,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+
+                                      <div class="yith-wcwl-add-button">
+                                        <a href="?add_to_wishlist=19" data-rel="tooltip" data-product-id="19"
+                                          data-product-type="simple" data-original-product-id="19"
+                                          class="add_to_wishlist single_add_to_wishlist"
+                                          data-product-title="Simple Plastice Chair In White Color"
+                                          title="Add to Wishlist" tabindex="0">
+                                          <i class="yith-wcwl-icon fa fa-heart-o"></i> <span>Add to Wishlist</span>
+                                        </a>
+                                      </div>
+
+                                    </div>
+                                    <div class="compare-button mf-compare-button"><a
+                                        href="https://demo2.drfuri.com/martfury3?action=yith-woocompare-add-product&amp;id=19"
+                                        class="compare" title="Compare" data-product_id="19" tabindex="0">Compare</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <span class="price"><ins><span class="woocommerce-Price-amount amount"><bdi><span
+                                          class="woocommerce-Price-currencySymbol">$</span>41.99</bdi></span></ins><del><span
+                                      class="woocommerce-Price-amount amount"><bdi><span
+                                          class="woocommerce-Price-currencySymbol">$</span>55.65</bdi></span></del>
+                                  <span class="sale">25% off</span></span>
+                                <h2 class="woo-loop-product__title"><a
+                                    href="https://demo2.drfuri.com/martfury3/shop/simple-plastice-chair-in-white-color/"
+                                    tabindex="0">Simple Plastice Chair In White Color</a></h2>
+                                <div class="sold-by-meta"><span class="sold-by-label">Sold By: </span><a
+                                    href="https://demo2.drfuri.com/martfury3/vendor/xhome/" tabindex="0">YOUNG SHOP</a>
+                                </div>
+                                <div class="mf-rating">
+                                  <div class="star-rating" role="img" aria-label="Rated 4.50 out of 5"><span
+                                      style="width:90%">Rated <strong class="rating">4.50</strong> out of 5</span></div>
+                                  <span class="count">02</span>
+                                </div>
+                                <div class="deal-progress">
+                                  <div class="progress-bar">
+                                    <div class="progress-value" style="width: 27.272727272727%"></div>
+                                  </div>
+                                  <p class="progress-text">Sold: 27</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li
+                              class="col-xs-6 col-sm-4 col-md-3 col-lg-2 un-6-cols product type-product post-280 status-publish outofstock product_cat-decoration product_cat-garden-kitchen product_tag-garden product_tag-kitchen has-post-thumbnail sale shipping-taxable purchasable product-type-simple slick-slide slick-active"
+                              style="width: 242px;" data-slick-index="2" aria-hidden="false" tabindex="-1" role="option"
+                              aria-describedby="slick-slide02">
+                              <div class="product-inner  clearfix">
+                                <div class="mf-product-thumbnail"><a
+                                    href="https://demo2.drfuri.com/martfury3/shop/letter-printed-cushion-cover-cotton/"
+                                    tabindex="0"><img width="300" height="300"
+                                      src="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/30a-300x300.jpg"
+                                      class="lazyloaded" alt="" sizes="(max-width: 300px) 100vw, 300px"
+                                      srcset="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/30a-300x300.jpg 300w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/30a-70x70.jpg 70w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/30a-150x150.jpg 150w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/30a-768x768.jpg 768w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/30a-600x600.jpg 600w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/30a.jpg 1000w"
+                                      data-ll-status="loaded"><noscript><img width="300" height="300"
+                                        src="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/30a-300x300.jpg"
+                                        class="" alt=""
+                                        srcset="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/30a-300x300.jpg 300w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/30a-70x70.jpg 70w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/30a-150x150.jpg 150w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/30a-768x768.jpg 768w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/30a-600x600.jpg 600w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/30a.jpg 1000w"
+                                        sizes="(max-width: 300px) 100vw, 300px" /></noscript><span class="ribbons"><span
+                                        class="out-of-stock ribbon">Out Of Stock</span></span></a>
+                                  <div class="footer-button"><a
+                                      href="https://demo2.drfuri.com/martfury3/shop/letter-printed-cushion-cover-cotton/"
+                                      data-quantity="1" data-title="Letter Printed Cushion Cover Cotton"
+                                      class="button product_type_simple" data-product_id="280"
+                                      data-product_sku="VS75560341230"
+                                      aria-label="Read more about “Letter Printed Cushion Cover Cotton”" rel="nofollow"
+                                      tabindex="0"><i class="p-icon icon-bag2" data-rel="tooltip"
+                                        title="Read more"></i><span class="add-to-cart-text">Read more</span></a><a
+                                      href="https://demo2.drfuri.com/martfury3/shop/letter-printed-cushion-cover-cotton/"
+                                      data-id="280" class="mf-product-quick-view" tabindex="0"><i
+                                        class="p-icon icon-eye" title="Quick View" data-rel="tooltip"></i></a>
+                                    <div
+                                      class="yith-wcwl-add-to-wishlist add-to-wishlist-280  wishlist-fragment on-first-load"
+                                      data-fragment-ref="280"
+                                      data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:280,&quot;parent_product_id&quot;:280,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:false,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+
+                                      <div class="yith-wcwl-add-button">
+                                        <a href="?add_to_wishlist=280" data-rel="tooltip" data-product-id="280"
+                                          data-product-type="simple" data-original-product-id="280"
+                                          class="add_to_wishlist single_add_to_wishlist"
+                                          data-product-title="Letter Printed Cushion Cover Cotton"
+                                          title="Add to Wishlist" tabindex="0">
+                                          <i class="yith-wcwl-icon fa fa-heart-o"></i> <span>Add to Wishlist</span>
+                                        </a>
+                                      </div>
+
+                                    </div>
+                                    <div class="compare-button mf-compare-button"><a
+                                        href="https://demo2.drfuri.com/martfury3?action=yith-woocompare-add-product&amp;id=280"
+                                        class="compare" title="Compare" data-product_id="280" tabindex="0">Compare</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <span class="price"><ins><span class="woocommerce-Price-amount amount"><bdi><span
+                                          class="woocommerce-Price-currencySymbol">$</span>13.59</bdi></span></ins><del><span
+                                      class="woocommerce-Price-amount amount"><bdi><span
+                                          class="woocommerce-Price-currencySymbol">$</span>25.17</bdi></span></del>
+                                  <span class="sale">46% off</span></span>
+                                <h2 class="woo-loop-product__title"><a
+                                    href="https://demo2.drfuri.com/martfury3/shop/letter-printed-cushion-cover-cotton/"
+                                    tabindex="0">Letter Printed Cushion Cover Cotton</a></h2>
+                                <div class="sold-by-meta"><span class="sold-by-label">Sold By: </span><a
+                                    href="https://demo2.drfuri.com/martfury3/vendor/xhome/" tabindex="0">YOUNG SHOP</a>
+                                </div>
+                                <div class="mf-rating">
+                                  <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span
+                                      style="width:100%">Rated <strong class="rating">5.00</strong> out of 5</span>
+                                  </div><span class="count">01</span>
+                                </div>
+                                <div class="deal-progress">
+                                  <div class="progress-bar">
+                                    <div class="progress-value" style="width: 3.4883720930233%"></div>
+                                  </div>
+                                  <p class="progress-text">Sold: 3</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li
+                              class="col-xs-6 col-sm-4 col-md-3 col-lg-2 un-6-cols product type-product post-295 status-publish instock product_cat-equipments product_cat-health-beauty product_tag-beauty product_tag-care has-post-thumbnail sale shipping-taxable purchasable product-type-simple slick-slide slick-active"
+                              style="width: 242px;" data-slick-index="3" aria-hidden="false" tabindex="-1" role="option"
+                              aria-describedby="slick-slide03">
+                              <div class="product-inner  clearfix">
+                                <div class="mf-product-thumbnail"><a
+                                    href="https://demo2.drfuri.com/martfury3/shop/baxter-care-hair-kit-for-bearded-mens/"
+                                    tabindex="0"><img width="300" height="300"
+                                      src="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/34a-300x300.jpg"
+                                      class="lazyloaded" alt="" sizes="(max-width: 300px) 100vw, 300px"
+                                      srcset="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/34a-300x300.jpg 300w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/34a-70x70.jpg 70w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/34a-150x150.jpg 150w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/34a-768x768.jpg 768w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/34a-600x600.jpg 600w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/34a.jpg 1000w"
+                                      data-ll-status="loaded"><noscript><img width="300" height="300"
+                                        src="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/34a-300x300.jpg"
+                                        class="" alt=""
+                                        srcset="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/34a-300x300.jpg 300w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/34a-70x70.jpg 70w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/34a-150x150.jpg 150w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/34a-768x768.jpg 768w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/34a-600x600.jpg 600w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/34a.jpg 1000w"
+                                        sizes="(max-width: 300px) 100vw, 300px" /></noscript><span class="ribbons"><span
+                                        class="onsale ribbon"><span class="onsep">-</span>25<span
+                                          class="per">%</span></span></span></a>
+                                  <div class="footer-button"><a href="?add-to-cart=295" data-quantity="1"
+                                      data-title="Baxter Care Hair Kit For Bearded Mens"
+                                      class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                      data-product_id="295" data-product_sku="PU1133569999"
+                                      aria-label="Add “Baxter Care Hair Kit For Bearded Mens” to your cart"
+                                      rel="nofollow" tabindex="0"><i class="p-icon icon-bag2" data-rel="tooltip"
+                                        title="Add to cart"></i><span class="add-to-cart-text">Add to cart</span></a><a
+                                      href="https://demo2.drfuri.com/martfury3/shop/baxter-care-hair-kit-for-bearded-mens/"
+                                      data-id="295" class="mf-product-quick-view" tabindex="0"><i
+                                        class="p-icon icon-eye" title="Quick View" data-rel="tooltip"></i></a>
+                                    <div
+                                      class="yith-wcwl-add-to-wishlist add-to-wishlist-295  wishlist-fragment on-first-load"
+                                      data-fragment-ref="295"
+                                      data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:295,&quot;parent_product_id&quot;:295,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:false,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+
+                                      <div class="yith-wcwl-add-button">
+                                        <a href="?add_to_wishlist=295" data-rel="tooltip" data-product-id="295"
+                                          data-product-type="simple" data-original-product-id="295"
+                                          class="add_to_wishlist single_add_to_wishlist"
+                                          data-product-title="Baxter Care Hair Kit For Bearded Mens"
+                                          title="Add to Wishlist" tabindex="0">
+                                          <i class="yith-wcwl-icon fa fa-heart-o"></i> <span>Add to Wishlist</span>
+                                        </a>
+                                      </div>
+
+                                    </div>
+                                    <div class="compare-button mf-compare-button"><a
+                                        href="https://demo2.drfuri.com/martfury3?action=yith-woocompare-add-product&amp;id=295"
+                                        class="compare" title="Compare" data-product_id="295" tabindex="0">Compare</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <span class="price"><ins><span class="woocommerce-Price-amount amount"><bdi><span
+                                          class="woocommerce-Price-currencySymbol">$</span>93.59</bdi></span></ins><del><span
+                                      class="woocommerce-Price-amount amount"><bdi><span
+                                          class="woocommerce-Price-currencySymbol">$</span>125.17</bdi></span></del>
+                                  <span class="sale">25% off</span></span>
+                                <h2 class="woo-loop-product__title"><a
+                                    href="https://demo2.drfuri.com/martfury3/shop/baxter-care-hair-kit-for-bearded-mens/"
+                                    tabindex="0">Baxter Care Hair Kit For Bearded Mens</a></h2>
+                                <div class="sold-by-meta"><span class="sold-by-label">Sold By: </span><a
+                                    href="https://demo2.drfuri.com/martfury3/vendor/gopro/" tabindex="0">gopro</a></div>
+                                <div class="mf-rating">
+                                  <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span
+                                      style="width:100%">Rated <strong class="rating">5.00</strong> out of 5</span>
+                                  </div><span class="count">01</span>
+                                </div>
+                                <div class="deal-progress">
+                                  <div class="progress-bar">
+                                    <div class="progress-value" style="width: 16.470588235294%"></div>
+                                  </div>
+                                  <p class="progress-text">Sold: 14</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li
+                              class="col-xs-6 col-sm-4 col-md-3 col-lg-2 un-6-cols product type-product post-293 status-publish instock product_cat-health-beauty product_cat-perfumer product_tag-speaker product_tag-television has-post-thumbnail sale shipping-taxable purchasable product-type-simple slick-slide slick-active"
+                              style="width: 242px;" data-slick-index="4" aria-hidden="false" tabindex="-1" role="option"
+                              aria-describedby="slick-slide04">
+                              <div class="product-inner  clearfix">
+                                <div class="mf-product-thumbnail"><a
+                                    href="https://demo2.drfuri.com/martfury3/shop/set-30-piece-korea-startskin-natural-mask/"
+                                    tabindex="0"><img width="300" height="300"
+                                      src="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/33a-300x300.jpg"
+                                      class="lazyloaded" alt="" sizes="(max-width: 300px) 100vw, 300px"
+                                      srcset="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/33a-300x300.jpg 300w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/33a-70x70.jpg 70w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/33a-150x150.jpg 150w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/33a-768x768.jpg 768w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/33a-600x600.jpg 600w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/33a.jpg 1000w"
+                                      data-ll-status="loaded"><noscript><img width="300" height="300"
+                                        src="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/33a-300x300.jpg"
+                                        class="" alt=""
+                                        srcset="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/33a-300x300.jpg 300w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/33a-70x70.jpg 70w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/33a-150x150.jpg 150w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/33a-768x768.jpg 768w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/33a-600x600.jpg 600w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2017/11/33a.jpg 1000w"
+                                        sizes="(max-width: 300px) 100vw, 300px" /></noscript><span class="ribbons"><span
+                                        class="onsale ribbon"><span class="onsep">-</span>35<span
+                                          class="per">%</span></span></span></a>
+                                  <div class="footer-button"><a href="?add-to-cart=293" data-quantity="1"
+                                      data-title="Set 30 Piece Korea StartSkin Natural Mask"
+                                      class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                      data-product_id="293" data-product_sku="YI1133569889"
+                                      aria-label="Add “Set 30 Piece Korea StartSkin Natural Mask” to your cart"
+                                      rel="nofollow" tabindex="0"><i class="p-icon icon-bag2" data-rel="tooltip"
+                                        title="Add to cart"></i><span class="add-to-cart-text">Add to cart</span></a><a
+                                      href="https://demo2.drfuri.com/martfury3/shop/set-30-piece-korea-startskin-natural-mask/"
+                                      data-id="293" class="mf-product-quick-view" tabindex="0"><i
+                                        class="p-icon icon-eye" title="Quick View" data-rel="tooltip"></i></a>
+                                    <div
+                                      class="yith-wcwl-add-to-wishlist add-to-wishlist-293  wishlist-fragment on-first-load"
+                                      data-fragment-ref="293"
+                                      data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:293,&quot;parent_product_id&quot;:293,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:false,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+
+                                      <div class="yith-wcwl-add-button">
+                                        <a href="?add_to_wishlist=293" data-rel="tooltip" data-product-id="293"
+                                          data-product-type="simple" data-original-product-id="293"
+                                          class="add_to_wishlist single_add_to_wishlist"
+                                          data-product-title="Set 30 Piece Korea StartSkin Natural Mask"
+                                          title="Add to Wishlist" tabindex="0">
+                                          <i class="yith-wcwl-icon fa fa-heart-o"></i> <span>Add to Wishlist</span>
+                                        </a>
+                                      </div>
+
+                                    </div>
+                                    <div class="compare-button mf-compare-button"><a
+                                        href="https://demo2.drfuri.com/martfury3?action=yith-woocompare-add-product&amp;id=293"
+                                        class="compare" title="Compare" data-product_id="293" tabindex="0">Compare</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <span class="price"><ins><span class="woocommerce-Price-amount amount"><bdi><span
+                                          class="woocommerce-Price-currencySymbol">$</span>32.75</bdi></span></ins><del><span
+                                      class="woocommerce-Price-amount amount"><bdi><span
+                                          class="woocommerce-Price-currencySymbol">$</span>50.69</bdi></span></del>
+                                  <span class="sale">35% off</span></span>
+                                <h2 class="woo-loop-product__title"><a
+                                    href="https://demo2.drfuri.com/martfury3/shop/set-30-piece-korea-startskin-natural-mask/"
+                                    tabindex="0">Set 30 Piece Korea StartSkin Natural Mask</a></h2>
+                                <div class="sold-by-meta"><span class="sold-by-label">Sold By: </span><a
+                                    href="https://demo2.drfuri.com/martfury3/vendor/iclever/" tabindex="0">ROBERT’S
+                                    STORE</a></div>
+                                <div class="mf-rating">
+                                  <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span
+                                      style="width:100%">Rated <strong class="rating">5.00</strong> out of 5</span>
+                                  </div><span class="count">01</span>
+                                </div>
+                                <div class="deal-progress">
+                                  <div class="progress-bar">
+                                    <div class="progress-value" style="width: 14.606741573034%"></div>
+                                  </div>
+                                  <p class="progress-text">Sold: 13</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li
+                              class="col-xs-6 col-sm-4 col-md-3 col-lg-2 un-6-cols product type-product post-292 status-publish last instock product_cat-health-beauty product_cat-perfumer product_tag-chair product_tag-washer has-post-thumbnail sale shipping-taxable purchasable product-type-simple slick-slide"
+                              style="width: 242px;" data-slick-index="5" aria-hidden="true" tabindex="-1" role="option"
+                              aria-describedby="slick-slide05">
+                              <div class="product-inner  clearfix">
+                                <div class="mf-product-thumbnail"><a
+                                    href="https://demo2.drfuri.com/martfury3/shop/ciate-palemore-lipstick-bold-red-color/"
+                                    tabindex="-1"><img width="300" height="300"
+                                      src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E"
+                                      class="" alt=""
+                                      data-lazy-srcset="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/31a-300x300.jpg 300w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/31a-70x70.jpg 70w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/31a-150x150.jpg 150w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/31a-768x768.jpg 768w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/31a-600x600.jpg 600w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/31a.jpg 1000w"
+                                      data-lazy-sizes="(max-width: 300px) 100vw, 300px"
+                                      data-lazy-src="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/31a-300x300.jpg"><noscript><img
+                                        width="300" height="300"
+                                        src="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/31a-300x300.jpg"
+                                        class="" alt=""
+                                        srcset="https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/31a-300x300.jpg 300w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/31a-70x70.jpg 70w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/31a-150x150.jpg 150w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/31a-768x768.jpg 768w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/31a-600x600.jpg 600w, https://demo2.drfuri.com/martfury3/wp-content/uploads/sites/38/2013/06/31a.jpg 1000w"
+                                        sizes="(max-width: 300px) 100vw, 300px" /></noscript><span class="ribbons"><span
+                                        class="onsale ribbon"><span class="onsep">-</span>37<span
+                                          class="per">%</span></span></span></a>
+                                  <div class="footer-button"><a href="?add-to-cart=292" data-quantity="1"
+                                      data-title="Ciate Palemore Lipstick Bold Red Color"
+                                      class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                      data-product_id="292" data-product_sku="SF1133569600"
+                                      aria-label="Add “Ciate Palemore Lipstick Bold Red Color” to your cart"
+                                      rel="nofollow" tabindex="-1"><i class="p-icon icon-bag2" data-rel="tooltip"
+                                        title="Add to cart"></i><span class="add-to-cart-text">Add to cart</span></a><a
+                                      href="https://demo2.drfuri.com/martfury3/shop/ciate-palemore-lipstick-bold-red-color/"
+                                      data-id="292" class="mf-product-quick-view" tabindex="-1"><i
+                                        class="p-icon icon-eye" title="Quick View" data-rel="tooltip"></i></a>
+                                    <div
+                                      class="yith-wcwl-add-to-wishlist add-to-wishlist-292  wishlist-fragment on-first-load"
+                                      data-fragment-ref="292"
+                                      data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:292,&quot;parent_product_id&quot;:292,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:false,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+
+                                      <div class="yith-wcwl-add-button">
+                                        <a href="?add_to_wishlist=292" data-rel="tooltip" data-product-id="292"
+                                          data-product-type="simple" data-original-product-id="292"
+                                          class="add_to_wishlist single_add_to_wishlist"
+                                          data-product-title="Ciate Palemore Lipstick Bold Red Color"
+                                          title="Add to Wishlist" tabindex="-1">
+                                          <i class="yith-wcwl-icon fa fa-heart-o"></i> <span>Add to Wishlist</span>
+                                        </a>
+                                      </div>
+
+                                    </div>
+                                    <div class="compare-button mf-compare-button"><a
+                                        href="https://demo2.drfuri.com/martfury3?action=yith-woocompare-add-product&amp;id=292"
+                                        class="compare" title="Compare" data-product_id="292" tabindex="-1">Compare</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <span class="price"><ins><span class="woocommerce-Price-amount amount"><bdi><span
+                                          class="woocommerce-Price-currencySymbol">$</span>42.33</bdi></span></ins><del><span
+                                      class="woocommerce-Price-amount amount"><bdi><span
+                                          class="woocommerce-Price-currencySymbol">$</span>66.78</bdi></span></del>
+                                  <span class="sale">37% off</span></span>
+                                <h2 class="woo-loop-product__title"><a
+                                    href="https://demo2.drfuri.com/martfury3/shop/ciate-palemore-lipstick-bold-red-color/"
+                                    tabindex="-1">Ciate Palemore Lipstick Bold Red Color</a></h2>
+                                <div class="sold-by-meta"><span class="sold-by-label">Sold By: </span><a
+                                    href="https://demo2.drfuri.com/martfury3/vendor/xhome/" tabindex="-1">YOUNG SHOP</a>
+                                </div>
+                                <div class="mf-rating">
+                                  <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span
+                                      style="width:100%">Rated <strong class="rating">5.00</strong> out of 5</span>
+                                  </div><span class="count">01</span>
+                                </div>
+                                <div class="deal-progress">
+                                  <div class="progress-bar">
+                                    <div class="progress-value" style="width: 5.3191489361702%"></div>
+                                  </div>
+                                  <p class="progress-text">Sold: 5</p>
+                                </div>
+                              </div>
+                            </li>
+                          </div>
+                        </div><span class="icon-chevron-right slick-next-arrow slick-arrow" style=""
+                          aria-disabled="false"></span>
+                        <ul class="slick-dots" style="display: block;" role="tablist">
+                          <li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true"
+                            aria-controls="navigation00" id="slick-slide00"><button type="button" data-role="none"
+                              role="button" tabindex="0">1</button></li>
+                          <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation01"
+                            id="slick-slide01"><button type="button" data-role="none" role="button"
+                              tabindex="0">2</button></li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <!-- end deals div -->
+      <div>
+        <div class="ps-top-categories mt-40 mb-40">
+          <div class="ps-container">
+            <h3>Top Categories</h3>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="ps-home-ads mt-40 mb-40">
+          <div class="ps-container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="ps-collection">
+                  <div><a href="products.html" target="_blank"><img src="../assets/storage/promotion/3.jpg"
+                        style="max-width: 100%" alt="Homepage middle 1"></a></div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="ps-collection">
+                  <div><a href="products.html" target="_blank"><img src="../assets/storage/promotion/4.jpg"
+                        style="max-width: 100%" alt="Homepage middle 2"></a></div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="ps-collection">
+                  <div><a href="products.html" target="_blank"><img src="../assets/storage/promotion/5.jpg"
+                        style="max-width: 100%" alt="Homepage middle 3"></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="ps-product-list mt-40 mb-40">
+          <div class="ps-container">
+            <div class="ps-section__header">
+              <h3>Featured products</h3>
+              <ul class="ps-section__links">
+                <li><a href="products.html">View All</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="ps-home-ads mt-40 mb-40">
+          <div class="ps-container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="ps-collection">
+                  <div><a href="products.html" target="_blank"><img src="../assets/storage/promotion/6.jpg"
+                        style="max-width: 100%" alt="Homepage big 1"></a></div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="ps-collection">
+                  <div><a href="products.html" target="_blank"><img src="../assets/storage/promotion/9.jpg"
+                        style="max-width: 100%" alt="Homepage big 2"></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="ps-product-list mb-60">
+
+        </div>
+      </div>
+      <div>
+        <div class="ps-product-list">
+
+        </div>
+      </div>
+      <div>
+        <div class="ps-download-app">
+          <div class="ps-container">
+            <div class="ps-block--download-app">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ">
+                    <div class="ps-block__thumbnail">
+                      <img src="../assets/storage/general/app.png" alt="screenshot">
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ">
+                    <div class="ps-block__content">
+                      <h3>Download Martfury App Now!</h3>
+                      <p>Shopping fastly and easily more with our app. Get a link to download the app on your phone.</p>
+                      <form class="ps-form--download-app"
+                        action="https://martfury.botble.com/ajax/send-download-app-links" method="post">
+                        <input type="hidden" name="_token" value="ZLzRde8mWNN9n7cCJbjJWhDOXwEIbuaFPq6dbxwz">
+                        <div class="form-group--nest">
+                          <input class="form-control" type="email" name="email" placeholder="Email Address">
+                          <button class="ps-btn" type="submit">Subscribe</button>
+                        </div>
+                      </form>
+                      <p class="download-link">
+                        <a href="https://www.appstore.com"><img src="../assets/themes/martfury/img/google-play.png"
+                            alt="Google Play"></a>
+                        <a href="store.html"><img src="../assets/themes/martfury/img/app-store.png" alt="App Store"></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="ps-product-list">
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div data-session-domain="martfury.botble.com"></div>
+  <div class="ps-popup" id="subscribe" data-time="10000" style="display: none">
+    <div class="ps-popup__content bg--cover"
+      data-background="https://martfury.botble.com/storage/general/newsletter.jpg"
+      style="background-size: cover!important;"><a class="ps-popup__close" href="#"><i class="icon-cross"></i></a>
+      <form method="post" action="https://martfury.botble.com/newsletter/subscribe"
+        class="ps-form--subscribe-popup newsletter-form">
+        <input type="hidden" name="_token" value="ZLzRde8mWNN9n7cCJbjJWhDOXwEIbuaFPq6dbxwz">
+        <div class="ps-form__content">
+          <h4>Get 25% Discount</h4>
+          <p>Subscribe to the mailing list to receive updates on new arrivals, special offers and our promotions.</p>
+          <div class="form-group">
+            <input class="form-control" name="email" type="email" placeholder="Email Address" required="">
+          </div>
+          <div class="form-group">
+            <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response-6273a74e52c19">
+          </div>
+          <div class="form-group">
+            <button class="ps-btn" type="submit">Subscribe</button>
+          </div>
+          <div class="ps-checkbox">
+            <input class="form-control" type="checkbox" id="dont_show_again" name="dont_show_again">
+            <label for="dont_show_again">Don&#039;t show this popup again</label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="back2top"><i class="icon icon-arrow-up"></i></div>
+  <div class="ps-site-overlay"></div>
+  <div class="ps-search" id="site-search"><a class="ps-btn--close" href="#"></a>
+    <div class="ps-search__content">
+      <form class="ps-form--primary-search" action="https://martfury.botble.com/products"
+        data-ajax-url="https://martfury.botble.com/ajax/search-products" method="get">
+        <input class="form-control input-search-product" name="q" value="" type="text" autocomplete="off"
+          placeholder="Search for...">
+        <div class="spinner-icon">
+          <i class="fa fa-spin fa-spinner"></i>
+        </div>
+        <button><i class="aroma-magnifying-glass"></i></button>
+        <div class="ps-panel--search-result"></div>
+      </form>
+    </div>
+  </div>
+  <div class="modal fade" id="product-quickview" tabindex="-1" role="dialog" aria-labelledby="product-quickview"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content"><span class="modal-close" data-dismiss="modal"><i class="icon-cross2"></i></span>
+        <article class="ps-product--detail ps-product--fullwidth ps-product--quickview">
+        </article>
+      </div>
+    </div>
+  </div>
+
+</section>
